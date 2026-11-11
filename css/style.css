@@ -27,13 +27,19 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container { width: 750px; }
+  .container {
+    width: 750px;
+  }
 }
 @media (min-width: 992px) {
-  .container { width: 970px; }
+  .container {
+    width: 970px;
+  }
 }
 @media (min-width: 1200px) {
-  .container { width: 1170px; }
+  .container {
+    width: 1170px;
+  }
 }
 
 /* small screens */
@@ -383,3 +389,68 @@ body {
 }
 
 /* end portofilo */
+/* start about */
+
+.about {
+  padding-top: var(--section-padding);
+  padding-bottom: calc(var(--section-padding) + 100px);
+}
+
+.about-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-content .about-shape {
+  position: relative;
+  width: 275px;
+  height: 300px;
+  background: var(--section-background);
+}
+
+.about-content .about-shape::before {
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 100px);
+  left: -10px;
+  top: -50px;
+  z-index: -1;
+}
+
+.about-content .about-shape::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 200px;
+  border-left: var(--main-color) solid 80px;
+  border-bottom: var(--main-color) solid 80px;
+  top: -30px;
+  right: -150px;
+  z-index: -1;
+}
+
+.about-content .about-info {
+  flex-basis: calc(100% - 550px);
+    max-width: 500px;
+}
+
+.about .about-info p:first-child {
+  line-height: 1.8;
+  margin: 0 0 40px;
+  font-weight: bold;
+}
+
+.about-content .about-info hr {
+  width: 50%;
+  background-color: var(--main-color);
+}
+
+.about .about-info p:last-child {
+  line-height: 1.8;
+  font-size: 16px;
+} 
+
+/* end about */
