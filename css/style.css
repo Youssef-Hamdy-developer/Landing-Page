@@ -2,6 +2,8 @@
 :root {
   --main-color: #10cab7;
   --sec-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
 }
 
 /* global rules */
@@ -44,7 +46,7 @@ body {
 
 /* start component */
 .special-heading {
-  color: #f6f6f6;
+  color: #ebeced;
   font-size: 100px;
   text-align: center;
   font-weight: 800;
@@ -200,8 +202,9 @@ body {
 
 /* start features */
 .features {
-  padding: 60px 0;
-  background-color: #f6f6f6;
+  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
+  background-color: var(--section-background);
 }
 
 .features .container {
@@ -236,8 +239,8 @@ body {
 /* start services */
 
 .services {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
 }
 
 .services .services-content {
@@ -312,9 +315,9 @@ body {
 /* start portofilo */
 
 .portfolio {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  background-color: #fffffff3;
+  padding-bottom: var(--section-padding);
+  padding-top: var(--section-padding);
+  background-color: var(--section-background);
 }
 
 .portfolio .portfolio-content {
